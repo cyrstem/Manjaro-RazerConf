@@ -1,6 +1,6 @@
 # Manjaro-RazerConf
 ![Razer](img.jpeg)
-Format: ![Alt Text](url)
+
 fix-and config file for my setup
 
 # HeadPhones Fix
