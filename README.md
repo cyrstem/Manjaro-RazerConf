@@ -1,12 +1,11 @@
 # Manjaro-RazerConf
 fix-and config fie for my setup
-## audio HeadPhones setup
--- cd /etc/modprobe.d
---nano alsa.conf
-##add this line to the file 
-options snd-hda-intel model=alc298-spk-volume
-## then as root depmod-a ;
-## modprobe -r snd-hda-intel;	
-## modprobe snd-hda-intel
-#reboot
+
+# HeadPhones Fix
+ Create  or copy file alsa.conf in: 
+ cd /etc/modprobe.d/
+ then as root depmod-a ;
+ modprobe -r snd-hda-intel;	
+ modprobe snd-hda-intel
+ reboot
 
