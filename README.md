@@ -1,5 +1,5 @@
 # Manjaro-RazerConf
-![Razer](img.jpeg)
+
 
 fix-and config file for my setup
 
