@@ -9,3 +9,8 @@ fix-and config fie for my setup
  modprobe snd-hda-intel
  reboot
 
+# Save  packages
+pacman -Qqe >packages.txt
+
+# Reinstall packages 
+sudo pacman -S --needed - <packages.txt
