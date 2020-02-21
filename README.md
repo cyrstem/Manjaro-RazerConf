@@ -16,3 +16,11 @@ fix-and config file for my setup
 
 # Reinstall packages 
 	'sudo pacman -S --needed - <packages.txt
+# Install Missing icons for APPS
+create appname.desktop
+''
+move file from to
+' sudo mv /home/jacos/KodeLife.desktop /usr/share/applications/'
+and put icons in :
+'cd /usr/share/pixmaps/'
+
