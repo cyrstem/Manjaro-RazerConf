@@ -24,3 +24,33 @@ move file from to
 and put icons in :
 'cd /usr/share/pixmaps/'
 
+# Enable autodiscover AirPlay Client support on Arch Linux ( like on macOS )
+
+## Step 1
+
+Install required dependencies
+```sh
+$ pacman -S avahi pulseaudio-zeroconf
+```
+
+## Step 2
+
+Enable and Start Avahi daemon
+```sh
+$ systemctl enable --now avahi-daemon.service
+```
+
+## Step 3
+
+Enable the required module on Pulseaudio ( paste this at the end of `/etc/pulse/default.pa` ):
+```sh
+### Enable AirPlay support
+load-module module-raop-discover
+```
+
+## Step 4
+
+Restart Pulseaudio:
+```sh
+$ systemctl --user restart pulseaudio.service
+```
