@@ -53,4 +53,10 @@ load-module module-raop-discover
 Restart Pulseaudio:
 ```sh
 $ systemctl --user restart pulseaudio.service
+
+```
+## Step 5
+removing manjaro terminal icons :
+```
+https://github.com/romkatv/powerlevel10k
 ```
