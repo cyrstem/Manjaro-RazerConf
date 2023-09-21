@@ -13,15 +13,15 @@ fix-and config file for my setup
  reboot
 ```
 # Save  packages
-	'pacman -Qqe >packages.txt
+	pacman -Qqe >packages.txt
 
 # Reinstall packages 
-	'sudo pacman -S --needed - <packages.txt
+	sudo pacman -S --needed - <packages.txt
 # Install Missing icons for APPS
 create appname.desktop
 ''
 move file from to
-' sudo mv /home/jacos/KodeLife.desktop /usr/share/applications/'
+sudo mv /home/jacos/KodeLife.desktop /usr/share/applications/'
 and put icons in :
 'cd /usr/share/pixmaps/'
 
@@ -31,14 +31,14 @@ and put icons in :
 
 Install required dependencies
 ```sh
-$ pacman -S avahi pulseaudio-zeroconf
+pacman -S avahi pulseaudio-zeroconf
 ```
 
 ## Step 2
 
 Enable and Start Avahi daemon
 ```sh
-$ systemctl enable --now avahi-daemon.service
+systemctl enable --now avahi-daemon.service
 ```
 
 ## Step 3
@@ -53,7 +53,7 @@ load-module module-raop-discover
 
 Restart Pulseaudio:
 ```sh
-$ systemctl --user restart pulseaudio.service
+systemctl --user restart pulseaudio.service
 
 ```
 ## Step 5
